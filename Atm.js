@@ -73,14 +73,14 @@ function atm() {
                 case 3: return [4 /*yield*/, inquirer.prompt([{
                             name: 'amount',
                             type: 'number',
-                            message: 'Enter the withdraw amount'
+                            message: 'Enter the remaining amount'
                         }])];
                 case 4:
                     amount = _b.sent();
                     withdrawAmount = Number(amount.amount);
                     if (withdrawAmount > 0 && withdrawAmount <= balance) {
                         withdraw_Amount = balance - withdrawAmount;
-                        console.log("The withdrawn amount = " + withdraw_Amount);
+                        console.log("The remaining amount = " + withdraw_Amount);
                     }
                     else {
                         console.log('Sorry, The transaction cannot proceed. Your balance is less than amount entered.');
