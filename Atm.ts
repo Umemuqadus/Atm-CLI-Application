@@ -74,11 +74,11 @@ async function atm() {
       }]);
 
       //Convert deposit input amount into number.
-      const deposit_amount = Number(depositAmount.depositAmount);
+      const deposit_amount = Number(depositAmount.deposit);
 
       //Total deposit amount
       let TotaldepositAmount = balance + deposit_amount;
-      console.log("The remaining amount = " + TotaldepositAmount);
+      console.log("The total amount = " + TotaldepositAmount);
       break;
       
       //Check balalnce
