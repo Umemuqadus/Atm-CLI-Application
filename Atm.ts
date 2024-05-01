@@ -53,7 +53,7 @@ async function atm() {
             
       if (withdrawAmount > 0 && withdrawAmount <= balance) {
           let withdraw_Amount = balance - withdrawAmount;
-          console.log("The withdrawn amount = " + withdraw_Amount);
+          console.log("The remaining amount = " + withdraw_Amount);
           
       } else {
           console.log('Sorry, The transaction cannot proceed. Your balance is less than amount entered.');
@@ -78,7 +78,7 @@ async function atm() {
 
       //Total deposit amount
       let TotaldepositAmount = balance + deposit_amount;
-      console.log("The deposited amount = " + TotaldepositAmount);
+      console.log("The remaining amount = " + TotaldepositAmount);
       break;
       
       //Check balalnce
